@@ -11,6 +11,9 @@
 |
 */
 #delroigtwoerijw
+Route::get("/", "HomeController@gethome");
+Route::resource('catalog', 'CatalogController');
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -44,3 +47,4 @@ Route::get('/catalog/edit/{id}', function($id)
 {
     return view('catalog.edit', array('id'=>$id));
 });
+*/
