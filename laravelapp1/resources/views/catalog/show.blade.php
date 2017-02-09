@@ -38,9 +38,12 @@
             
         <?php endif ?>
         <br />
-        <button type="button" class="btn btn-danger">Devolver película</button>
-        <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar película</button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Volver al listado</button>
+        <button type="button" class="btn btn-warning" onclick="location.href='{{url('/')}}/catalog/{{$id}}/edit'">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar peli</button>
+        <button type="button" class="btn btn-default" onclick="window.history.back()">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Tornar</button>
+
+        <button type="button" class="btn btn-danger"> Devolver pelicula</button>
     </div>
 </div>
 

@@ -17,7 +17,7 @@
 			<div class="panel-body" style="padding:30px">
 			
 				<!--Abrir formulario-->
-				<form action="url('/catalog')" method="POST">
+				<form action="{{ url('catalog') }}" method="POST">
 					 <!--Protección contra CSRF-->
 					 {{ csrf_field() }} 
 			

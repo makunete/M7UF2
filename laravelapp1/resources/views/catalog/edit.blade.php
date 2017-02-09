@@ -17,8 +17,8 @@
 			<div class="panel-body" style="padding:30px">
 			
 				<!--Abrir formulario-->
-				<form action="url('/catalog')" method="POST">
-					 <!--Protección contra CSRF-->
+				<form action="{{ url('catalog') }}/{{$id+1}}" method="POST">
+									 <!--Protección contra CSRF-->
 					 {{ csrf_field() }} 
 					 {{method_field('PUT')}}
     
